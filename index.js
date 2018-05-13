@@ -6,8 +6,8 @@
 //function that we can then use to calculate if a trip is too large for
 // a driver. We recommend referencing the test/indexTest.js for more details.
 
-function produceDriveringRange(blockRange) {
-  return function(startingBlock, endingBlock) -
+function produceDrivingRange(blockRange) {
+  return function(startingBlock, endingBlock) {
   let distance = parseInt(endingBlock) - parseInt(startingBlock);
          let difference = blockRange - distance;
           if (difference > 0) {
